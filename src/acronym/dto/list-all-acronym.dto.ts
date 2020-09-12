@@ -13,7 +13,7 @@ export class ListAllAcronymDTO {
   @IsNumber()
   @IsOptional()
   @Type(() => Number)
-  readonly from: number;
+  readonly from: number = 0;
 
   @ApiProperty({ required: false })
   @IsOptional()
